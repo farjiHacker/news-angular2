@@ -8,6 +8,7 @@ import { ModuleWithProviders }  from '@angular/core';
 import { AppComponent } from './app.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { BusinessComponent } from './business/business.component';
+import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
   { path: 'technology', component: TechnologyComponent },
@@ -20,12 +21,14 @@ export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
   declarations: [
     AppComponent,
     TechnologyComponent,
-    BusinessComponent
+    BusinessComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
