@@ -31,7 +31,7 @@ import { Routes } from '@angular/router';
   </div>
 
   <!-- Router Outlet -->
-  <!--<router-outlet></router-outlet>-->
+  <router-outlet></router-outlet>
 `
 })
 export class AppComponent {
