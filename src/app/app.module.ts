@@ -8,24 +8,23 @@ import { ModuleWithProviders }  from '@angular/core';
 import { AppComponent } from './app.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { BusinessComponent } from './business/business.component';
+import { HomeComponent } from './home/home.component';
+import { ApproutingModule }  from './approuting.module';
 
-export const routes: Routes = [
-  { path: 'technology', component: TechnologyComponent },
-  { path: 'business', component: BusinessComponent },
-];
-
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
 
 @NgModule({
   declarations: [
     AppComponent,
     TechnologyComponent,
-    BusinessComponent
+    BusinessComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule,
+    ApproutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
